@@ -37,7 +37,7 @@ export function Projects() {
             <p className="text-muted-foreground text-lg max-w-2xl">Academic and independent projects showcasing full-stack capabilities and attention to detail.</p>
           </div>
           <Button variant="outline" className="w-fit" asChild data-testid="projects-btn-github">
-            <a href="https://github.com/joel-gil" target="_blank" rel="noopener noreferrer">
+            <a href="https://github.com/DUkE-01" target="_blank" rel="noopener noreferrer">
               <Github size={16} className="mr-2" />
               View Full GitHub
             </a>
