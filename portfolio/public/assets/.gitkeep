@@ -1,0 +1,2 @@
+# This folder holds static PDF assets served directly by Vite/Vercel.
+# Place CV PDFs here so they are accessible at /assets/*.pdf

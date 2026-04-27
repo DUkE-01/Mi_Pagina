@@ -1,0 +1,49 @@
+# Dependencies
+node_modules/
+
+# Replit internal config (not needed on GitHub / Vercel)
+.replit-artifact/
+.pnp
+.pnp.js
+
+# Build outputs
+dist/
+build/
+.output/
+
+# Environment files
+.env
+.env.local
+.env.development.local
+.env.test.local
+.env.production.local
+
+# Logs
+logs/
+*.log
+npm-debug.log*
+yarn-debug.log*
+yarn-error.log*
+pnpm-debug.log*
+
+# Editor / OS
+.DS_Store
+.DS_Store?
+._*
+.Spotlight-V100
+.Trashes
+ehthumbs.db
+Thumbs.db
+*.suo
+*.user
+*.userosscache
+*.sln.docstates
+.idea/
+.vscode/
+
+# Vite / Replit
+.replit-artifact/
+*.local
+
+# TypeScript
+*.tsbuildinfo
