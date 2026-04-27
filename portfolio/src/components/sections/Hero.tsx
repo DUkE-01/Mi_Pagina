@@ -64,10 +64,10 @@ export function Hero() {
             </Button>
             
             <div className="flex items-center gap-3 mt-4 sm:mt-0">
-              <a href="https://github.com/joel-gil" target="_blank" rel="noopener noreferrer" className="p-3 rounded-full bg-card border border-border hover:border-primary/50 hover:text-primary transition-all" data-testid="hero-link-github">
+              <a href="https://github.com/DUkE-01" target="_blank" rel="noopener noreferrer" className="p-3 rounded-full bg-card border border-border hover:border-primary/50 hover:text-primary transition-all" data-testid="hero-link-github">
                 <Github size={20} />
               </a>
-              <a href="https://linkedin.com/in/joel-gil" target="_blank" rel="noopener noreferrer" className="p-3 rounded-full bg-card border border-border hover:border-primary/50 hover:text-primary transition-all" data-testid="hero-link-linkedin">
+              <a href="www.linkedin.com/in/joel-gil-softwaredev" target="_blank" rel="noopener noreferrer" className="p-3 rounded-full bg-card border border-border hover:border-primary/50 hover:text-primary transition-all" data-testid="hero-link-linkedin">
                 <Linkedin size={20} />
               </a>
               <a href="mailto:Joel.Gil2025@hotmail.com" className="p-3 rounded-full bg-card border border-border hover:border-primary/50 hover:text-primary transition-all" data-testid="hero-link-email">
