@@ -18,6 +18,14 @@ export default defineConfig({
   build: {
     outDir: "dist",
     emptyOutDir: true,
+    rollupOptions: {
+      output: {
+        manualChunks: {
+          'framer-motion': ['framer-motion'],
+          'ui-vendors': ['lucide-react', 'clsx', 'tailwind-merge'],
+        },
+      },
+    },
   },
   server: {
     port: 5173,

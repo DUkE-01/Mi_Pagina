@@ -17,14 +17,18 @@ function Router() {
   );
 }
 
+import { LazyMotion, domAnimation } from "framer-motion";
+
 function App() {
   return (
     <ThemeProvider attribute="class" defaultTheme="dark" enableSystem={false}>
       <QueryClientProvider client={queryClient}>
         <TooltipProvider>
-          <WouterRouter base={import.meta.env.BASE_URL.replace(/\/$/, "")}>
-            <Router />
-          </WouterRouter>
+          <LazyMotion features={domAnimation}>
+            <WouterRouter base={import.meta.env.BASE_URL.replace(/\/$/, "")}>
+              <Router />
+            </WouterRouter>
+          </LazyMotion>
           <Toaster />
         </TooltipProvider>
       </QueryClientProvider>

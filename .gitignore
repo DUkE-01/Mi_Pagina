@@ -1,8 +1,5 @@
 # Dependencies
 node_modules/
-
-# Replit internal config (not needed on GitHub / Vercel)
-.replit-artifact/
 .pnp
 .pnp.js
 
