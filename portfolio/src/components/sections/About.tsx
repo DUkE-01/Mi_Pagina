@@ -35,7 +35,7 @@ export function About() {
                   </div>
                   <div>
                     <h3 className="font-semibold text-lg">Education</h3>
-                    <p className="text-muted-foreground">Tecnólogo en Desarrollo de Software</p>
+                    <p className="text-muted-foreground">Associate Degree in Software Engineering</p>
                     <p className="text-sm text-muted-foreground mt-1">ITLA, Boca Chica, La Caleta</p>
                     <span className="inline-block mt-2 text-xs font-medium bg-secondary text-secondary-foreground px-2 py-1 rounded">Graduated</span>
                   </div>

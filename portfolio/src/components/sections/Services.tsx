@@ -1,16 +1,16 @@
 import { motion, AnimatePresence } from "framer-motion";
-import { 
-  Layout, 
-  Database, 
-  Rocket, 
-  Palette, 
-  Zap, 
-  Link as LinkIcon, 
-  ShieldCheck, 
-  BarChart3, 
-  Bug, 
-  Code2, 
-  MessageSquare, 
+import {
+  Layout,
+  Database,
+  Rocket,
+  Palette,
+  Zap,
+  Link as LinkIcon,
+  ShieldCheck,
+  BarChart3,
+  Bug,
+  Code2,
+  MessageSquare,
   CheckCircle2,
   Clock
 } from "lucide-react";
@@ -35,7 +35,7 @@ const services = [
     id: "web-backend",
     name: "Web Page with Backend",
     description: "Full authentication, database integration (Supabase/Relational), CRUD operations, and business logic.",
-    tech: [ "Node.js", "Supabase", "SQL Server", "Railway", "C#", "ASP.NET Framework", "ASP.NET WEB API", "ASP.NET Core"],
+    tech: ["Node.js", "Supabase", "SQL Server", "Railway", "C#", "ASP.NET Framework", "ASP.NET WEB API", "ASP.NET Core"],
     price: 300,
     delivery: "2 – 4 weeks",
     type: "full-stack",
@@ -45,7 +45,7 @@ const services = [
     id: "full-app",
     name: "Full Web Application",
     description: "Complex structured systems with multiple modules, role-based access, and advanced business logic.",
-    tech: ["Vite.js", "TypeScript", "Supabase", "Tailwind", "Capacitor","Railway", "C#", "ASP.NET Framework", "ASP.NET WEB API", "ASP.NET Core"],
+    tech: ["Vite.js", "TypeScript", "Supabase", "Tailwind", "Capacitor", "Railway", "C#", "ASP.NET Framework", "ASP.NET WEB API", "ASP.NET Core"],
     price: 800,
     delivery: "4 – 8 weeks",
     type: "full-stack",
@@ -171,7 +171,7 @@ export function Services() {
                     </div>
 
                     <h3 className="text-2xl font-bold mb-2 group-hover:text-primary transition-colors">{service.name}</h3>
-                    
+
                     <div className="flex items-center gap-1.5 text-xs font-medium text-accent mb-4">
                       <Clock size={14} />
                       <span>{service.delivery}</span>
@@ -194,9 +194,9 @@ export function Services() {
                           ${service.price} <span className="text-sm font-normal text-muted-foreground uppercase">usd</span>
                         </p>
                       </div>
-                      <Button 
-                        size="icon" 
-                        className="rounded-full w-12 h-12 hover:scale-110 transition-transform bg-primary hover:bg-primary/90 shadow-lg shadow-primary/20" 
+                      <Button
+                        size="icon"
+                        className="rounded-full w-12 h-12 hover:scale-110 transition-transform bg-primary hover:bg-primary/90 shadow-lg shadow-primary/20"
                         onClick={() => contactOnWhatsApp(service.name)}
                       >
                         <MessageSquare size={20} />
@@ -226,7 +226,7 @@ export function Services() {
         >
           {/* Subtle background pulse */}
           <div className="absolute inset-0 bg-primary/5 animate-pulse -z-10" />
-          
+
           <CheckCircle2 className="mx-auto text-primary mb-6" size={48} />
           <h4 className="text-2xl md:text-3xl font-bold mb-4">Looking for something else?</h4>
           <p className="text-muted-foreground text-lg mb-8 max-w-2xl mx-auto">
