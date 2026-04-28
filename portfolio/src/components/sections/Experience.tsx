@@ -3,7 +3,7 @@ import { Briefcase, Calendar } from "lucide-react";
 
 const experiences = [
   {
-    role: "Pasante (Intern)",
+    role: "Intern",
     company: "CAM Software",
     period: "Aug 2025 – Apr 2026",
     description: "Contributing to technology solutions and engaging in dynamic learning across new technologies to build robust applications.",
