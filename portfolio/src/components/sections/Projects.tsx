@@ -1,8 +1,18 @@
 import { motion } from "framer-motion";
-import { ExternalLink, Github, Code2, LayoutTemplate } from "lucide-react";
+import { ExternalLink, Github, Code2, LayoutTemplate, Smartphone } from "lucide-react";
 import { Button } from "@/components/ui/button";
 
 const projects = [
+  {
+    title: "Shift Manager",
+    description: "A comprehensive workforce management system featuring advanced RBAC, real-time data synchronization with Supabase, and a mobile-first approach using Capacitor. Architected for high performance and scalability.",
+    tech: ["React.JS", "Capacitor", "Supabase", "TypeScript", "Railway"],
+    icon: Smartphone,
+    color: "from-accent/25 to-accent/5",
+    border: "border-accent/30",
+    githubUrl: "https://github.com/DUkE-01/Shift_Manager",
+    isHighlighted: true
+  },
   {
     title: "Full Stack CRUD Application",
     description: "A comprehensive data management system demonstrating end-to-end architecture. Handles classic CRUD operations with robust API integration and state management.",
@@ -16,8 +26,8 @@ const projects = [
     description: "A collection of responsive, interactive web development projects built during my coursework. Focuses on device adaptability, clean UI/UX, and semantic markup.",
     tech: ["HTML5", "CSS3", "JavaScript", "Responsive Design"],
     icon: LayoutTemplate,
-    color: "from-accent/20 to-accent/5",
-    border: "border-accent/20"
+    color: "from-primary/20 to-primary/5",
+    border: "border-primary/20"
   }
 ];
 
@@ -83,15 +93,30 @@ export function Projects() {
                     </div>
                     
                     <div className="flex items-center justify-between pt-6 border-t border-border/50">
-                      <span className="text-sm font-medium text-muted-foreground">Available on request</span>
-                      <Button 
-                        variant="ghost" 
-                        size="icon" 
-                        className="rounded-full hover:bg-primary hover:text-primary-foreground"
-                        onClick={scrollToContact}
-                      >
-                        <ExternalLink size={18} />
-                      </Button>
+                      <span className="text-sm font-medium text-muted-foreground">
+                        {project.githubUrl ? "Source code available" : "Available on request"}
+                      </span>
+                      {project.githubUrl ? (
+                        <Button 
+                          variant="ghost" 
+                          size="icon" 
+                          className="rounded-full hover:bg-primary hover:text-primary-foreground group/link"
+                          asChild
+                        >
+                          <a href={project.githubUrl} target="_blank" rel="noopener noreferrer">
+                            <Github size={18} className="group-hover/link:scale-110 transition-transform" />
+                          </a>
+                        </Button>
+                      ) : (
+                        <Button 
+                          variant="ghost" 
+                          size="icon" 
+                          className="rounded-full hover:bg-primary hover:text-primary-foreground"
+                          onClick={scrollToContact}
+                        >
+                          <ExternalLink size={18} />
+                        </Button>
+                      )}
                     </div>
                   </div>
                 </div>
