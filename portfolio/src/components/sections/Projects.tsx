@@ -22,6 +22,10 @@ const projects = [
 ];
 
 export function Projects() {
+  const scrollToContact = () => {
+    document.querySelector("#contact")?.scrollIntoView({ behavior: "smooth" });
+  };
+
   return (
     <section id="projects" className="py-24 bg-card/30 border-t border-border/50 relative" data-testid="section-projects">
       <div className="container mx-auto px-4 md:px-6">
@@ -80,7 +84,12 @@ export function Projects() {
                     
                     <div className="flex items-center justify-between pt-6 border-t border-border/50">
                       <span className="text-sm font-medium text-muted-foreground">Available on request</span>
-                      <Button variant="ghost" size="icon" className="rounded-full hover:bg-primary hover:text-primary-foreground">
+                      <Button 
+                        variant="ghost" 
+                        size="icon" 
+                        className="rounded-full hover:bg-primary hover:text-primary-foreground"
+                        onClick={scrollToContact}
+                      >
                         <ExternalLink size={18} />
                       </Button>
                     </div>
