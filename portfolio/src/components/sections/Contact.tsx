@@ -157,8 +157,8 @@ export function Contact() {
             transition={{ duration: 0.5, delay: 0.2 }}
             className="bg-background rounded-3xl border border-border p-8 shadow-sm relative overflow-hidden"
           >
-            {/* Subtle glow inside form */}
-            <div className="absolute -top-40 -right-40 w-80 h-80 bg-primary/5 rounded-full blur-[80px] pointer-events-none" />
+            {/* Subtle glow inside form - Optimized */}
+            <div className="absolute -top-20 -right-20 md:-top-40 md:-right-40 w-40 h-40 md:w-80 md:h-80 bg-primary/5 rounded-full blur-[40px] md:blur-[80px] pointer-events-none" />
             
             <h3 className="text-2xl font-bold mb-8 relative z-10">Send a Message</h3>
             

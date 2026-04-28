@@ -15,10 +15,10 @@ export function Hero() {
       className="relative min-h-[100dvh] flex flex-col justify-center pt-16 overflow-hidden"
       data-testid="section-hero"
     >
-      {/* Background Elements */}
+      {/* Background Elements - Optimized for Mobile Performance */}
       <div className="absolute inset-0 pointer-events-none -z-10 flex justify-center items-center">
-        <div className="absolute w-[800px] h-[800px] bg-primary/10 rounded-full blur-[120px] opacity-50 mix-blend-screen -top-40 -right-40" />
-        <div className="absolute w-[600px] h-[600px] bg-accent/10 rounded-full blur-[100px] opacity-50 mix-blend-screen bottom-0 -left-20" />
+        <div className="absolute w-[400px] h-[400px] md:w-[800px] md:h-[800px] bg-primary/10 rounded-full blur-[60px] md:blur-[120px] opacity-40 md:opacity-50 -top-20 -right-20 md:-top-40 md:-right-40" />
+        <div className="absolute w-[300px] h-[300px] md:w-[600px] md:h-[600px] bg-accent/10 rounded-full blur-[50px] md:blur-[100px] opacity-40 md:opacity-50 bottom-0 -left-10 md:-left-20" />
       </div>
 
       <div className="container mx-auto px-4 md:px-6 relative z-10">
