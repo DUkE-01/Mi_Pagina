@@ -7,6 +7,7 @@ const About = lazy(() => import("@/components/sections/About").then(m => ({ defa
 const Skills = lazy(() => import("@/components/sections/Skills").then(m => ({ default: m.Skills })));
 const Experience = lazy(() => import("@/components/sections/Experience").then(m => ({ default: m.Experience })));
 const Projects = lazy(() => import("@/components/sections/Projects").then(m => ({ default: m.Projects })));
+const Services = lazy(() => import("@/components/sections/Services").then(m => ({ default: m.Services })));
 const WhyMe = lazy(() => import("@/components/sections/WhyMe").then(m => ({ default: m.WhyMe })));
 const Contact = lazy(() => import("@/components/sections/Contact").then(m => ({ default: m.Contact })));
 const Footer = lazy(() => import("@/components/layout/Footer").then(m => ({ default: m.Footer })));
@@ -24,6 +25,7 @@ export default function Home() {
         <Skills />
         <Experience />
         <Projects />
+        <Services />
         <WhyMe />
         <Contact />
         <Footer />
