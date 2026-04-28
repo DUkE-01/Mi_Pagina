@@ -3,7 +3,7 @@ import { Briefcase, Calendar } from "lucide-react";
 
 const experiences = [
   {
-    role: "Intern",
+    role: "Software Developer Intern",
     company: "CAM Software",
     period: "Aug 2025 – Apr 2026",
     description: "Contributing to technology solutions and engaging in dynamic learning across new technologies to build robust applications.",
@@ -42,7 +42,7 @@ export function Experience() {
 
         <div className="relative border-l-2 border-border ml-4 md:ml-6 space-y-12">
           {experiences.map((exp, index) => (
-            <motion.div 
+            <motion.div
               key={index}
               initial={{ opacity: 0, x: -20 }}
               whileInView={{ opacity: 1, x: 0 }}
@@ -53,7 +53,7 @@ export function Experience() {
             >
               {/* Timeline Dot */}
               <div className={`absolute -left-[9px] top-1 w-4 h-4 rounded-full border-2 bg-background ${exp.isUpcoming ? 'border-accent shadow-[0_0_10px_rgba(var(--accent),0.5)]' : 'border-primary'}`} />
-              
+
               <div className="flex flex-col sm:flex-row sm:items-baseline sm:justify-between mb-2 gap-2 sm:gap-4">
                 <h3 className="text-xl md:text-2xl font-bold flex items-center gap-2">
                   {exp.role}
@@ -66,12 +66,12 @@ export function Experience() {
                   {exp.period}
                 </div>
               </div>
-              
+
               <div className="flex items-center text-primary font-medium mb-4">
                 <Briefcase size={16} className="mr-2" />
                 {exp.company}
               </div>
-              
+
               <p className="text-muted-foreground leading-relaxed">
                 {exp.description}
               </p>

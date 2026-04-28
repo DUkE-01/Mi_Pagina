@@ -54,7 +54,7 @@ export function About() {
               className="prose prose-invert max-w-none prose-p:text-lg prose-p:leading-relaxed prose-p:text-muted-foreground"
             >
               <p>
-                I am a Front-End developer in training with solid skills in HTML, CSS, JavaScript, and C#. My passion lies in building clean, functional, and device-adaptive interfaces that prioritize user experience above all else.
+                I am a Front-End developer in training with solid skills in HTML, CSS, JavaScript, Typescript, React, Vite and C#. My passion lies in building clean, functional, and device-adaptive interfaces that prioritize user experience above all else.
               </p>
               <p>
                 I view software development not just as writing code, but as solving complex problems through elegant architecture and thoughtful design. I thrive in dynamic environments where I can learn constantly and adapt to new challenges.
