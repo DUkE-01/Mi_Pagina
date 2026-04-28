@@ -45,7 +45,7 @@ const services = [
     id: "full-app",
     name: "Full Web Application",
     description: "Complex structured systems with multiple modules, role-based access, and advanced business logic.",
-    tech: ["Vite.js", "TypeScript", "Supabase", "Tailwind", "Capacitor"],
+    tech: ["Vite.js", "TypeScript", "Supabase", "Tailwind", "Capacitor","Railway", "C#", "ASP.NET Framework", "ASP.NET WEB API", "ASP.NET Core"],
     price: 800,
     delivery: "4 – 8 weeks",
     type: "full-stack",
