@@ -1,8 +1,9 @@
 import { motion } from "framer-motion";
 import { 
-  SiReact, SiJavascript, SiTypescript, SiSharp, SiDotnet, 
+  SiReact, SiJavascript, SiTypescript, SiDotnet, 
   SiMysql, SiGit, SiGithub, SiHtml5, SiCss, SiSupabase
 } from "react-icons/si";
+import { TbBrandCSharp } from "react-icons/tb";
 
 const skillCategories = [
   {
@@ -18,7 +19,7 @@ const skillCategories = [
   {
     title: "Backend & Database",
     skills: [
-      { name: "C#", icon: SiSharp, level: "Intermediate", color: "#239120" },
+      { name: "C#", icon: TbBrandCSharp, level: "Intermediate", color: "#239120" },
       { name: ".NET", icon: SiDotnet, level: "Intermediate", color: "#512BD4" },
       { name: "MySQL", icon: SiMysql, level: "Intermediate", color: "#4479A1" },
       { name: "Supabase", icon: SiSupabase, level: "Intermediate", color: "#3ECF8E" },
