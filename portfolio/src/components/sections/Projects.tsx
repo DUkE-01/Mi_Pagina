@@ -6,7 +6,7 @@ const projects = [
   {
     title: "Shift Manager",
     description: "A comprehensive workforce management system featuring advanced RBAC, real-time data synchronization with Supabase, and a mobile-first approach using Capacitor. Architected for high performance and scalability.",
-    tech: ["React.JS", "Capacitor", "Supabase", "TypeScript", "Railway"],
+    tech: ["React.JS", "Capacitor", "Supabase", "TypeScript"],
     icon: Smartphone,
     color: "from-accent/25 to-accent/5",
     border: "border-accent/30",
